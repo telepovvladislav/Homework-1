@@ -1,4 +1,4 @@
-  /**
+        /**
 	 * Java. Lesson 1. Homework 1
 	 */
    public class HomeWorkApp {
@@ -9,7 +9,7 @@
 	        compareNumbers();
 	    }
 	    /** ПУНКТ 2.
-     */
+             */
 	    public static void printThreeWords () {
 	      System.out.println("Orange");
 	      System.out.println("Banana");
