@@ -7,7 +7,7 @@ public class HomeWorkApp2 {
         System.out.println(winthin10and20(-20,10));
         isPositiveOrNegative(0);
         System.out.println(isNegative(-5)); //true, если число отрицательное, и false - если положительное.
-        printWorldNTimes("Hi World!",2);
+        printWorldNTimes("Hi World",2);
         System.out.println(checkYear (1984));
     }
 
