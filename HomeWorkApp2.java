@@ -4,9 +4,9 @@
 class HomeWorkApp2 {
     
     public static void main(String[] args) {
-        System.out.println(isBetween10And20(10,-2));
-        System.out.println(isBetween10And20(12,5));
-        System.out.println(isBetween10And20(20,1));
+        System.out.println(isBetween10And20(10, -2));
+        System.out.println(isBetween10And20(12, 5));
+        System.out.println(isBetween10And20(20, 1));
         
         printPositiveOrNegative(-1);
         printPositiveOrNegative(0);
@@ -28,11 +28,11 @@ class HomeWorkApp2 {
         return a + b >= 10 && a + b <= 20;
     }
     
-    static void printPositiveOrNegative(int a, int b) {
+    static void printPositiveOrNegative(int a) {
         System.out.println(a >= 0? "Positive" : "Negative");
     }
     
-    static boolean is Negative(int a) {
+    static boolean isNegative(int a) {
         return a < 0;
     }
     
