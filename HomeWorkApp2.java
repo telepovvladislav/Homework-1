@@ -1,39 +1,49 @@
 /**
  * Java. Lesson 2. Homework 2
  */
-
-public class HomeWorkApp2 {
+class HomeWorkApp2 {
+    
     public static void main(String[] args) {
-        System.out.println(winthin10and20(-20,10));
-        isPositiveOrNegative(0);
-        System.out.println(isNegative(-5)); //true, если число отрицательное, и false - если положительное.
-        printWorldNTimes("Hi World",2);
-        System.out.println(checkYear (1984));
+        System.out.println(isBetween10And20(10,-2));
+        System.out.println(isBetween10And20(12,5));
+        System.out.println(isBetween10And20(20,1));
+        
+        printPositiveOrNegative(-1);
+        printPositiveOrNegative(0);
+        printPositiveOrNegative(1);
+        
+        System.out.println(isNegative(-1));
+        System.out.println(isNegative(0));
+        System.out.println(isNegative(1));
+        
+        repeatString("Hello, Word!", 3);
+        
+        System.out.println(isYearLeap(1904));
+        System.out.println(isYearLeap(1900));
+        System.out.println(isYearLeap(2000));
+        System.out.println(isYearLeap(2005));
     }
-
-    /** Пункт 1
-     */
-     static boolean winthin10and20 (int x1, int x2) {
-        int sum = x1 + x2;
-        return (10 <= sum && sum <= 20)? true : false;
+    
+    static boolean isBetween10And20(int a, int b) {
+        return a + b >= 10 && a + b <= 20;
     }
-
-    /** Пункт 2
-     */
-     static void isPositiveOrNegative (int x) {
-        System.out.println((x >= 0)? "Positive" : "Negative");
+    
+    static void printPositiveOrNegative(int a, int b) {
+        System.out.println(a >= 0? "Positive" : "Negative");
     }
-
-    /** Пункт 3
-     */
-     static boolean isNegative (int x) {
-        return ( x < 0 )? true : false;
+    
+    static boolean is Negative(int a) {
+        return a < 0;
     }
-
-    /** Пункт 4
-     */
-     static void printWorldNTimes (String world, int times) {
-        for (int i = 0; i < times; i++) {
-            System.out.println(world);
+    
+    static void repeatString(String s, int count) {
+        for (int i = 0; i < count; i++) {
+            System.out.println(s);
+        }
+    }
+    
+    static boolean isYearLeap(int year) {
+        return (year % 4 == 0 && year % 100 != 0) || year % 400 == 0;
     }
 }
+    
