@@ -89,7 +89,7 @@ class TicTacToe {
         if (x < 0 || y < 0 || x > 2 || y > 2) {
             return false;
         }
-        return table[x][y] = '.';
+        return table[x][y] == '.';
     }
   
     boolean checkWin(char ch) {
