@@ -23,7 +23,7 @@ public class HomeWorkApp5 {
 	
 
 /**
-* Class Person - Сотрудник
+* Сотрудник
 */
 	
 class Person {
